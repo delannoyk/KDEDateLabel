@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46DC797D1A4A058C00DC4624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC797C1A4A058C00DC4624 /* AppDelegate.swift */; };
+		46DC797F1A4A058C00DC4624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC797E1A4A058C00DC4624 /* ViewController.swift */; };
+		46DC79821A4A058C00DC4624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DC79801A4A058C00DC4624 /* Main.storyboard */; };
+		46DC79841A4A058C00DC4624 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DC79831A4A058C00DC4624 /* Images.xcassets */; };
+		46DC79871A4A058C00DC4624 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46DC79851A4A058C00DC4624 /* LaunchScreen.xib */; };
+		46DC79931A4A058C00DC4624 /* KDEDateLabelExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC79921A4A058C00DC4624 /* KDEDateLabelExampleTests.swift */; };
+		46DC799D1A4A05E200DC4624 /* KDEDateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC799C1A4A05E200DC4624 /* KDEDateLabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46DC798D1A4A058C00DC4624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46DC796F1A4A058C00DC4624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46DC79761A4A058C00DC4624;
+			remoteInfo = KDEDateLabelExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46DC79771A4A058C00DC4624 /* KDEDateLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDEDateLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DC797B1A4A058C00DC4624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DC797C1A4A058C00DC4624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46DC797E1A4A058C00DC4624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46DC79811A4A058C00DC4624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46DC79831A4A058C00DC4624 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46DC79861A4A058C00DC4624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46DC798C1A4A058C00DC4624 /* KDEDateLabelExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDEDateLabelExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DC79911A4A058C00DC4624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DC79921A4A058C00DC4624 /* KDEDateLabelExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDEDateLabelExampleTests.swift; sourceTree = "<group>"; };
+		46DC799C1A4A05E200DC4624 /* KDEDateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KDEDateLabel.swift; path = ../KDEDateLabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DC79741A4A058C00DC4624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DC79891A4A058C00DC4624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DC796E1A4A058C00DC4624 = {
+			isa = PBXGroup;
+			children = (
+				46DC799C1A4A05E200DC4624 /* KDEDateLabel.swift */,
+				46DC79791A4A058C00DC4624 /* KDEDateLabelExample */,
+				46DC798F1A4A058C00DC4624 /* KDEDateLabelExampleTests */,
+				46DC79781A4A058C00DC4624 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46DC79781A4A058C00DC4624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DC79771A4A058C00DC4624 /* KDEDateLabelExample.app */,
+				46DC798C1A4A058C00DC4624 /* KDEDateLabelExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46DC79791A4A058C00DC4624 /* KDEDateLabelExample */ = {
+			isa = PBXGroup;
+			children = (
+				46DC797C1A4A058C00DC4624 /* AppDelegate.swift */,
+				46DC797E1A4A058C00DC4624 /* ViewController.swift */,
+				46DC79801A4A058C00DC4624 /* Main.storyboard */,
+				46DC79831A4A058C00DC4624 /* Images.xcassets */,
+				46DC79851A4A058C00DC4624 /* LaunchScreen.xib */,
+				46DC797A1A4A058C00DC4624 /* Supporting Files */,
+			);
+			path = KDEDateLabelExample;
+			sourceTree = "<group>";
+		};
+		46DC797A1A4A058C00DC4624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46DC797B1A4A058C00DC4624 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46DC798F1A4A058C00DC4624 /* KDEDateLabelExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				46DC79921A4A058C00DC4624 /* KDEDateLabelExampleTests.swift */,
+				46DC79901A4A058C00DC4624 /* Supporting Files */,
+			);
+			path = KDEDateLabelExampleTests;
+			sourceTree = "<group>";
+		};
+		46DC79901A4A058C00DC4624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46DC79911A4A058C00DC4624 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46DC79761A4A058C00DC4624 /* KDEDateLabelExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DC79961A4A058C00DC4624 /* Build configuration list for PBXNativeTarget "KDEDateLabelExample" */;
+			buildPhases = (
+				46DC79731A4A058C00DC4624 /* Sources */,
+				46DC79741A4A058C00DC4624 /* Frameworks */,
+				46DC79751A4A058C00DC4624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDEDateLabelExample;
+			productName = KDEDateLabelExample;
+			productReference = 46DC79771A4A058C00DC4624 /* KDEDateLabelExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46DC798B1A4A058C00DC4624 /* KDEDateLabelExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DC79991A4A058C00DC4624 /* Build configuration list for PBXNativeTarget "KDEDateLabelExampleTests" */;
+			buildPhases = (
+				46DC79881A4A058C00DC4624 /* Sources */,
+				46DC79891A4A058C00DC4624 /* Frameworks */,
+				46DC798A1A4A058C00DC4624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46DC798E1A4A058C00DC4624 /* PBXTargetDependency */,
+			);
+			name = KDEDateLabelExampleTests;
+			productName = KDEDateLabelExampleTests;
+			productReference = 46DC798C1A4A058C00DC4624 /* KDEDateLabelExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46DC796F1A4A058C00DC4624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kevin Delannoy";
+				TargetAttributes = {
+					46DC79761A4A058C00DC4624 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					46DC798B1A4A058C00DC4624 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 46DC79761A4A058C00DC4624;
+					};
+				};
+			};
+			buildConfigurationList = 46DC79721A4A058C00DC4624 /* Build configuration list for PBXProject "KDEDateLabelExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46DC796E1A4A058C00DC4624;
+			productRefGroup = 46DC79781A4A058C00DC4624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46DC79761A4A058C00DC4624 /* KDEDateLabelExample */,
+				46DC798B1A4A058C00DC4624 /* KDEDateLabelExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DC79751A4A058C00DC4624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DC79821A4A058C00DC4624 /* Main.storyboard in Resources */,
+				46DC79871A4A058C00DC4624 /* LaunchScreen.xib in Resources */,
+				46DC79841A4A058C00DC4624 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DC798A1A4A058C00DC4624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46DC79731A4A058C00DC4624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DC797F1A4A058C00DC4624 /* ViewController.swift in Sources */,
+				46DC799D1A4A05E200DC4624 /* KDEDateLabel.swift in Sources */,
+				46DC797D1A4A058C00DC4624 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DC79881A4A058C00DC4624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DC79931A4A058C00DC4624 /* KDEDateLabelExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46DC798E1A4A058C00DC4624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46DC79761A4A058C00DC4624 /* KDEDateLabelExample */;
+			targetProxy = 46DC798D1A4A058C00DC4624 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46DC79801A4A058C00DC4624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DC79811A4A058C00DC4624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46DC79851A4A058C00DC4624 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DC79861A4A058C00DC4624 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46DC79941A4A058C00DC4624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46DC79951A4A058C00DC4624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46DC79971A4A058C00DC4624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KDEDateLabelExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46DC79981A4A058C00DC4624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KDEDateLabelExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		46DC799A1A4A058C00DC4624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KDEDateLabelExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDEDateLabelExample.app/KDEDateLabelExample";
+			};
+			name = Debug;
+		};
+		46DC799B1A4A058C00DC4624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KDEDateLabelExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDEDateLabelExample.app/KDEDateLabelExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46DC79721A4A058C00DC4624 /* Build configuration list for PBXProject "KDEDateLabelExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DC79941A4A058C00DC4624 /* Debug */,
+				46DC79951A4A058C00DC4624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DC79961A4A058C00DC4624 /* Build configuration list for PBXNativeTarget "KDEDateLabelExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DC79971A4A058C00DC4624 /* Debug */,
+				46DC79981A4A058C00DC4624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DC79991A4A058C00DC4624 /* Build configuration list for PBXNativeTarget "KDEDateLabelExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DC799A1A4A058C00DC4624 /* Debug */,
+				46DC799B1A4A058C00DC4624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46DC796F1A4A058C00DC4624 /* Project object */;
+}

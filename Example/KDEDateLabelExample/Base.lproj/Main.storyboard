@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KDEDateLabelExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duA-yS-40m" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
+                                <rect key="frame" x="139" y="273" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiK-ND-8IB" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
+                                <rect key="frame" x="139" y="213" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pan-D1-Zlj" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
+                                <rect key="frame" x="139" y="334" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KiK-ND-8IB" secondAttribute="centerX" id="9vk-qB-euY"/>
+                            <constraint firstAttribute="centerY" secondItem="duA-yS-40m" secondAttribute="centerY" constant="0.5" id="UaO-vw-gl7"/>
+                            <constraint firstItem="Pan-D1-Zlj" firstAttribute="top" secondItem="duA-yS-40m" secondAttribute="bottom" constant="40" id="WIh-dr-Rc9"/>
+                            <constraint firstAttribute="centerX" secondItem="duA-yS-40m" secondAttribute="centerX" id="XmJ-aI-u0F"/>
+                            <constraint firstAttribute="centerX" secondItem="Pan-D1-Zlj" secondAttribute="centerX" id="YGn-Zf-MOo"/>
+                            <constraint firstItem="duA-yS-40m" firstAttribute="top" secondItem="KiK-ND-8IB" secondAttribute="bottom" constant="40" id="iLr-7Z-QsO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="KiK-ND-8IB" id="veY-nA-em1"/>
+                        <outlet property="label2" destination="duA-yS-40m" id="oV2-Cg-JOK"/>
+                        <outlet property="label3" destination="Pan-D1-Zlj" id="u65-fw-e3O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.66666666666666" y="298.19999999999999"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
