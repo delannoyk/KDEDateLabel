@@ -11,7 +11,7 @@ import UIKit
 // MARK: - KDEWeakReferencer
 ////////////////////////////////////////////////////////////////////////////////
 
-private class KDEWeakReferencer<T: AnyObject>: NSObject, Equatable {
+private class KDEWeakReferencer<T: NSObject>: NSObject, Equatable {
     private(set) weak var value: T?
 
     init(value: T) {
@@ -20,8 +20,8 @@ private class KDEWeakReferencer<T: AnyObject>: NSObject, Equatable {
     }
 }
 
-private func ==<T: AnyObject>(lhs: KDEWeakReferencer<T>, rhs: KDEWeakReferencer<T>) -> Bool {
-    return (lhs == rhs)
+private func ==<T: NSObject>(lhs: KDEWeakReferencer<T>, rhs: KDEWeakReferencer<T>) -> Bool {
+    return (lhs.value == rhs.value)
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -86,17 +86,17 @@ public class KDEDateLabel: UILabel {
 
 
     // MARK: Initialization
-    override init() {
+    public override init() {
         super.init()
         self.commonInit()
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.commonInit()
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
     }
@@ -112,16 +112,25 @@ public class KDEDateLabel: UILabel {
 
 
     // MARK: Date & Text updating
-    var date: NSDate? = nil {
+    public var date: NSDate? = nil {
         didSet {
             self.updateText()
         }
     }
 
-    var dateFormatTextBlock: ((date: NSDate) -> String)?
-    var dateFormatAttributedTextBlock: ((date: NSDate) -> NSAttributedString)?
+    public var dateFormatTextBlock: ((date: NSDate) -> String)? {
+        didSet {
+            self.updateText()
+        }
+    }
 
-    func updateText() {
+    public var dateFormatAttributedTextBlock: ((date: NSDate) -> NSAttributedString)? {
+        didSet {
+            self.updateText()
+        }
+    }
+
+    private func updateText() {
         if let date = date {
             if let dateFormatAttributedTextBlock = self.dateFormatAttributedTextBlock {
                 self.attributedText = dateFormatAttributedTextBlock(date: date)
