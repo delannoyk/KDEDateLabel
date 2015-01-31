@@ -6,9 +6,9 @@ KDEDateLabel is an UILabel subclass that saves you from refreshing it when using
 ## Installation
 
 You have multiple choices here:
-    * Copy `KDEDateLabel.swift` in your project.
-    * SOON: Adding it in your Podfile
-    * SOON: Carthage
+* Copy `KDEDateLabel.swift` in your project.
+* SOON: Adding it in your Podfile
+* SOON: Carthage
 
 ## Usage
 ```swift
