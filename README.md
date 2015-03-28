@@ -7,7 +7,7 @@ KDEDateLabel is an UILabel subclass that saves you from refreshing it when using
 
 You have multiple choices here:
 * Copy `KDEDateLabel.swift` in your project.
-* SOON: Adding it in your Podfile
+* Adding it in your Podfile `pod 'KDEDateLabel'`
 * SOON: Carthage
 
 ## Usage
@@ -31,7 +31,6 @@ KDEDateLabel is also compatible with Storyboard/XIB.
 
 ## Todo
 
-* Add Cocoapod support
 * Add Carthage support
 
 ## License
