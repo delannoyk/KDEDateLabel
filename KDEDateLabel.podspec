@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.authors      = {
     'Kevin Delannoy' => 'delannoyk@gmail.com'
   }
-  s.summary      = 'KDEDateLabel is an UILabel subclass that updates itself to make time ago's format easier.'
+  s.summary      = 'KDEDateLabel is an UILabel subclass that updates itself to make time ago\'s format easier.'
 
 # Source Info
   s.platform     =  :ios, '8.0'
