@@ -32,14 +32,7 @@ private func ==<T: NSObject>(lhs: KDEWeakReferencer<T>, rhs: KDEWeakReferencer<T
 
 class KDEDateLabelsHolder: NSObject {
     private var dateLabels: [KDEWeakReferencer<KDEDateLabel>] = []
-
-    private lazy var timer: NSTimer = {
-        return NSTimer.scheduledTimerWithTimeInterval(0.5,
-            target: self,
-            selector: "timerTicked:",
-            userInfo: nil,
-            repeats: true)
-    }()
+    private var timer: NSTimer?
 
 
     private class var instance: KDEDateLabelsHolder {
@@ -51,7 +44,7 @@ class KDEDateLabelsHolder: NSObject {
 
     private override init() {
         super.init()
-        self.timer.fire()
+        self.createNewTimer()
     }
 
 
@@ -63,6 +56,17 @@ class KDEDateLabelsHolder: NSObject {
         if let index = find(self.dateLabels, referencer) {
             self.dateLabels.removeAtIndex(index)
         }
+    }
+
+
+    private func createNewTimer() {
+        self.timer?.invalidate()
+
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(KDEDateLabel.refreshFrequency,
+            target: self,
+            selector: "timerTicked:",
+            userInfo: nil,
+            repeats: true)
     }
 
 
@@ -86,9 +90,8 @@ public class KDEDateLabel: UILabel {
 
 
     // MARK: Initialization
-    public override init() {
-        super.init()
-        self.commonInit()
+    public convenience init() {
+        self.init(frame: .zeroRect)
     }
 
     public required init(coder aDecoder: NSCoder) {
@@ -108,6 +111,14 @@ public class KDEDateLabel: UILabel {
     // MARK: Deinit
     deinit {
         KDEDateLabelsHolder.instance.removeReferencer(self.holder)
+    }
+
+
+    // MARK: Configuration
+    public static var refreshFrequency: NSTimeInterval = 0.3 {
+        didSet {
+            KDEDateLabelsHolder.instance.createNewTimer()
+        }
     }
 
 
