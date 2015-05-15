@@ -1,6 +1,7 @@
 # KDEDateLabel
 
 KDEDateLabel is an UILabel subclass that saves you from refreshing it when using 'time ago' format.
+![Example](example.gif)
 
 ## Installation
 
