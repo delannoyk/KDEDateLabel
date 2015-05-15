@@ -115,7 +115,7 @@ public class KDEDateLabel: UILabel {
 
 
     // MARK: Configuration
-    public static var refreshFrequency: NSTimeInterval = 0.3 {
+    public static var refreshFrequency: NSTimeInterval = 0.2 {
         didSet {
             KDEDateLabelsHolder.instance.createNewTimer()
         }
