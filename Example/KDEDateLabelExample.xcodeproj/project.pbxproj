@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B742DC1B0685E300930775 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B742DB1B0685E300930775 /* TableViewCell.swift */; };
 		46DC797D1A4A058C00DC4624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC797C1A4A058C00DC4624 /* AppDelegate.swift */; };
 		46DC797F1A4A058C00DC4624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC797E1A4A058C00DC4624 /* ViewController.swift */; };
 		46DC79821A4A058C00DC4624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DC79801A4A058C00DC4624 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46B742DB1B0685E300930775 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		46DC79771A4A058C00DC4624 /* KDEDateLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDEDateLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DC797B1A4A058C00DC4624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DC797C1A4A058C00DC4624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				46DC797C1A4A058C00DC4624 /* AppDelegate.swift */,
 				46DC797E1A4A058C00DC4624 /* ViewController.swift */,
+				46B742DB1B0685E300930775 /* TableViewCell.swift */,
 				46DC79801A4A058C00DC4624 /* Main.storyboard */,
 				46DC79831A4A058C00DC4624 /* Images.xcassets */,
 				46DC79851A4A058C00DC4624 /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46DC797F1A4A058C00DC4624 /* ViewController.swift in Sources */,
+				46B742DC1B0685E300930775 /* TableViewCell.swift in Sources */,
 				46DC799D1A4A05E200DC4624 /* KDEDateLabel.swift in Sources */,
 				46DC797D1A4A058C00DC4624 /* AppDelegate.swift in Sources */,
 			);

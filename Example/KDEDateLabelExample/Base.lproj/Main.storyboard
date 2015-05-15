@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,44 +17,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duA-yS-40m" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
-                                <rect key="frame" x="139" y="273" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiK-ND-8IB" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
-                                <rect key="frame" x="139" y="213" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pan-D1-Zlj" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
-                                <rect key="frame" x="139" y="334" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Inq-69-cvq">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="95" id="fl5-QZ-9YT" customClass="TableViewCell" customModule="KDEDateLabelExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fl5-QZ-9YT" id="mhx-re-yhG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-wA-khT">
+                                                    <rect key="frame" x="8" y="8" width="78" height="78"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="uRG-wA-khT" secondAttribute="height" multiplier="1:1" id="vAV-GA-tKn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kevin Delannoy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUp-sU-S9g">
+                                                    <rect key="frame" x="94" y="8" width="112" height="18"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PES-XR-0oj" customClass="KDEDateLabel" customModule="KDEDateLabelExample" customModuleProvider="target">
+                                                    <rect key="frame" x="279" y="9" width="33" height="16"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Hey, this is pretty cool!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-Jb-u7Y">
+                                                    <rect key="frame" x="94" y="34" width="218" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uRG-wA-khT" firstAttribute="leading" secondItem="mhx-re-yhG" secondAttribute="leading" constant="8" id="1Jc-7j-LGV"/>
+                                                <constraint firstAttribute="trailing" secondItem="PES-XR-0oj" secondAttribute="trailing" constant="8" id="EAL-b1-7Ah"/>
+                                                <constraint firstAttribute="bottom" secondItem="uRG-wA-khT" secondAttribute="bottom" constant="8" id="HVL-ae-M9b"/>
+                                                <constraint firstAttribute="trailing" secondItem="JcL-Jb-u7Y" secondAttribute="trailing" constant="8" id="Ihq-gO-Rp0"/>
+                                                <constraint firstItem="bUp-sU-S9g" firstAttribute="leading" secondItem="uRG-wA-khT" secondAttribute="trailing" constant="8" id="Ma8-dm-Oxv"/>
+                                                <constraint firstItem="uRG-wA-khT" firstAttribute="top" secondItem="mhx-re-yhG" secondAttribute="top" constant="8" id="NlX-g9-bTA"/>
+                                                <constraint firstItem="JcL-Jb-u7Y" firstAttribute="top" secondItem="bUp-sU-S9g" secondAttribute="bottom" constant="8" id="RbB-Ve-6hM"/>
+                                                <constraint firstItem="JcL-Jb-u7Y" firstAttribute="leading" secondItem="uRG-wA-khT" secondAttribute="trailing" constant="8" id="k2A-KJ-fOD"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JcL-Jb-u7Y" secondAttribute="bottom" constant="8" id="mhm-LK-894"/>
+                                                <constraint firstItem="bUp-sU-S9g" firstAttribute="top" secondItem="mhx-re-yhG" secondAttribute="top" constant="8" id="qaj-ef-t9a"/>
+                                                <constraint firstItem="PES-XR-0oj" firstAttribute="centerY" secondItem="bUp-sU-S9g" secondAttribute="centerY" id="xXv-Y0-jDt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageViewAuthorAvatar" destination="uRG-wA-khT" id="Mgp-8Y-25I"/>
+                                            <outlet property="labelAuthor" destination="bUp-sU-S9g" id="l30-JQ-eAc"/>
+                                            <outlet property="labelContent" destination="JcL-Jb-u7Y" id="UjA-1d-FQe"/>
+                                            <outlet property="labelDate" destination="PES-XR-0oj" id="GW7-cY-zvQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="rxE-Oc-lhf"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KiK-ND-8IB" secondAttribute="centerX" id="9vk-qB-euY"/>
-                            <constraint firstAttribute="centerY" secondItem="duA-yS-40m" secondAttribute="centerY" constant="0.5" id="UaO-vw-gl7"/>
-                            <constraint firstItem="Pan-D1-Zlj" firstAttribute="top" secondItem="duA-yS-40m" secondAttribute="bottom" constant="40" id="WIh-dr-Rc9"/>
-                            <constraint firstAttribute="centerX" secondItem="duA-yS-40m" secondAttribute="centerX" id="XmJ-aI-u0F"/>
-                            <constraint firstAttribute="centerX" secondItem="Pan-D1-Zlj" secondAttribute="centerX" id="YGn-Zf-MOo"/>
-                            <constraint firstItem="duA-yS-40m" firstAttribute="top" secondItem="KiK-ND-8IB" secondAttribute="bottom" constant="40" id="iLr-7Z-QsO"/>
+                            <constraint firstItem="Inq-69-cvq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="Dvy-qT-WaZ"/>
+                            <constraint firstItem="Inq-69-cvq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qMw-eg-hZL"/>
+                            <constraint firstAttribute="trailing" secondItem="Inq-69-cvq" secondAttribute="trailing" id="xVd-FR-TMc"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Inq-69-cvq" secondAttribute="bottom" id="yja-aI-ed2"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="label1" destination="KiK-ND-8IB" id="veY-nA-em1"/>
-                        <outlet property="label2" destination="duA-yS-40m" id="oV2-Cg-JOK"/>
-                        <outlet property="label3" destination="Pan-D1-Zlj" id="u65-fw-e3O"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.66666666666666" y="298.19999999999999"/>
+            <point key="canvasLocation" x="56" y="297"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

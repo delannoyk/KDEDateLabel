@@ -8,19 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet private weak var label1: KDEDateLabel!
-    @IBOutlet private weak var label2: KDEDateLabel!
-    @IBOutlet private weak var label3: KDEDateLabel!
+class ViewController: UIViewController, UITableViewDataSource {
+    let dates = [NSDate(), NSDate(timeIntervalSinceNow: -10), NSDate(timeIntervalSinceNow: -60)]
 
+    //MARK: UITableViewDataSource
 
-    //MARK: View controller's lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dates.count
+    }
 
-        self.label1.date = NSDate()
-        self.label2.date = NSDate(timeIntervalSinceNow: -100)
-        self.label3.date = NSDate(timeIntervalSinceNow: -1000)
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell") as! TableViewCell
+        cell.labelDate.date = dates[indexPath.row]
+        return cell
     }
 }
 
