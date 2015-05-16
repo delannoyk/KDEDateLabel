@@ -8,7 +8,6 @@ KDEDateLabel is an UILabel subclass that saves you from refreshing it when using
 You have multiple choices here:
 * Copy `KDEDateLabel.swift` in your project.
 * Adding it in your Podfile `pod 'KDEDateLabel'`
-* SOON: Carthage
 
 ## Usage
 ```swift
@@ -28,10 +27,6 @@ KDEDateLabel is also compatible with Storyboard/XIB.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## Todo
-
-* Add Carthage support
 
 ## License
 
