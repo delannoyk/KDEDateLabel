@@ -62,11 +62,12 @@ class KDEDateLabelsHolder: NSObject {
     private func createNewTimer() {
         self.timer?.invalidate()
 
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(KDEDateLabel.refreshFrequency,
+        self.timer = NSTimer(timeInterval: KDEDateLabel.refreshFrequency,
             target: self,
             selector: "timerTicked:",
             userInfo: nil,
             repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(self.timer!, forMode: NSRunLoopCommonModes)
     }
 
 
