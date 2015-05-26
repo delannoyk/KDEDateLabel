@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'KDEDateLabel'
-  s.version      = '1.1.1'
+  s.version      = '1.1.2'
   s.license      =  { :type => 'MIT' }
   s.homepage     = 'https://github.com/delannoyk/KDEDateLabel'
   s.authors      = {
