@@ -11,17 +11,25 @@ import UIKit
 // MARK: - KDEWeakReferencer
 ////////////////////////////////////////////////////////////////////////////////
 
-private class KDEWeakReferencer<T: NSObject>: NSObject, Equatable {
+private class KDEWeakReferencer<T: NSObject>: NSObject {
     private(set) weak var value: T?
 
     init(value: T) {
         self.value = value
         super.init()
     }
-}
 
-private func ==<T: NSObject>(lhs: KDEWeakReferencer<T>, rhs: KDEWeakReferencer<T>) -> Bool {
-    return (lhs.value == rhs.value)
+    private override func isEqual(object: AnyObject?) -> Bool {
+        return value?.isEqual(object) ?? false
+    }
+
+    private override var hash: Int {
+        return value?.hash ?? 0
+    }
+
+    private override var hashValue: Int {
+        return value?.hashValue ?? 0
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -31,16 +39,10 @@ private func ==<T: NSObject>(lhs: KDEWeakReferencer<T>, rhs: KDEWeakReferencer<T
 ////////////////////////////////////////////////////////////////////////////////
 
 class KDEDateLabelsHolder: NSObject {
-    private var dateLabels: [KDEWeakReferencer<KDEDateLabel>] = []
+    private var dateLabels = [KDEWeakReferencer<KDEDateLabel>]()
     private var timer: NSTimer?
 
-
-    private class var instance: KDEDateLabelsHolder {
-        struct KDESingleton {
-            static var instance = KDEDateLabelsHolder()
-        }
-        return KDESingleton.instance
-    }
+    private static var instance = KDEDateLabelsHolder()
 
     private override init() {
         super.init()
@@ -53,9 +55,10 @@ class KDEDateLabelsHolder: NSObject {
     }
 
     private func removeReferencer(referencer: KDEWeakReferencer<KDEDateLabel>) {
-        if let index = find(self.dateLabels, referencer) {
+        if let index = self.dateLabels.indexOf(referencer) {
             self.dateLabels.removeAtIndex(index)
         }
+        self.dateLabels = self.dateLabels.filter { $0.value != nil }
     }
 
 
@@ -71,7 +74,7 @@ class KDEDateLabelsHolder: NSObject {
     }
 
 
-    func timerTicked(NSTimer) {
+    @objc private func timerTicked(_: NSTimer) {
         for referencer in self.dateLabels {
             referencer.value?.updateText()
         }
@@ -92,10 +95,10 @@ public class KDEDateLabel: UILabel {
 
     // MARK: Initialization
     public convenience init() {
-        self.init(frame: .zeroRect)
+        self.init(frame: .zero)
     }
 
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.commonInit()
     }
