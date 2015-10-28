@@ -11,9 +11,9 @@ You have multiple choices here:
 
 ## Usage
 ```swift
-var label = KDEDateLabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
+let label = KDEDateLabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
 label.date = NSDate()
-label.dateFormatTextBlock = { (date) in
+label.dateFormatTextBlock = { date in
     return "\(Int(fabs(date.timeIntervalSinceNow)))s ago"
 }
 ```
