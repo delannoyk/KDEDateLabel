@@ -1,4 +1,9 @@
 # KDEDateLabel
+[![Build Status](https://travis-ci.org/delannoyk/KDEDateLabel.svg)](https://travis-ci.org/delannoyk/KDEDateLabel)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![CocoaPods Compatible](https://img.shields.io/cocoapods/v/KDEDateLabel.svg)
+![Platform iOS](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
+[![Contact](https://img.shields.io/badge/contact-%40kdelannoy-blue.svg)](https://twitter.com/kdelannoy)
 
 KDEDateLabel is an UILabel subclass that saves you from refreshing it when using 'time ago' format.
 ![Example](example.gif)
