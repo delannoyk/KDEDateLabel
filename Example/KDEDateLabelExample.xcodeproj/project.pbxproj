@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4607433A1C6E594A001AE5A6 /* KDEDateLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 460743391C6E594A001AE5A6 /* KDEDateLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4607433F1C6E5977001AE5A6 /* KDEDateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC799C1A4A05E200DC4624 /* KDEDateLabel.swift */; };
 		46B742DC1B0685E300930775 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B742DB1B0685E300930775 /* TableViewCell.swift */; };
 		46DC797D1A4A058C00DC4624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC797C1A4A058C00DC4624 /* AppDelegate.swift */; };
 		46DC797F1A4A058C00DC4624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC797E1A4A058C00DC4624 /* ViewController.swift */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		460743371C6E594A001AE5A6 /* KDEDateLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDEDateLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		460743391C6E594A001AE5A6 /* KDEDateLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDEDateLabel.h; sourceTree = "<group>"; };
+		4607433B1C6E594A001AE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B742DB1B0685E300930775 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		46DC79771A4A058C00DC4624 /* KDEDateLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDEDateLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DC797B1A4A058C00DC4624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		460743331C6E594A001AE5A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46DC79741A4A058C00DC4624 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,10 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460743381C6E594A001AE5A6 /* KDEDateLabel */ = {
+			isa = PBXGroup;
+			children = (
+				460743391C6E594A001AE5A6 /* KDEDateLabel.h */,
+				4607433B1C6E594A001AE5A6 /* Info.plist */,
+			);
+			path = KDEDateLabel;
+			sourceTree = "<group>";
+		};
 		46DC796E1A4A058C00DC4624 = {
 			isa = PBXGroup;
 			children = (
 				46DC799C1A4A05E200DC4624 /* KDEDateLabel.swift */,
+				460743381C6E594A001AE5A6 /* KDEDateLabel */,
 				46DC79791A4A058C00DC4624 /* KDEDateLabelExample */,
 				46DC798F1A4A058C00DC4624 /* KDEDateLabelExampleTests */,
 				46DC79781A4A058C00DC4624 /* Products */,
@@ -75,6 +97,7 @@
 			children = (
 				46DC79771A4A058C00DC4624 /* KDEDateLabelExample.app */,
 				46DC798C1A4A058C00DC4624 /* KDEDateLabelExampleTests.xctest */,
+				460743371C6E594A001AE5A6 /* KDEDateLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +143,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		460743341C6E594A001AE5A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4607433A1C6E594A001AE5A6 /* KDEDateLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		460743361C6E594A001AE5A6 /* KDEDateLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4607433E1C6E594A001AE5A6 /* Build configuration list for PBXNativeTarget "KDEDateLabel" */;
+			buildPhases = (
+				460743321C6E594A001AE5A6 /* Sources */,
+				460743331C6E594A001AE5A6 /* Frameworks */,
+				460743341C6E594A001AE5A6 /* Headers */,
+				460743351C6E594A001AE5A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDEDateLabel;
+			productName = KDEDateLabel;
+			productReference = 460743371C6E594A001AE5A6 /* KDEDateLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		46DC79761A4A058C00DC4624 /* KDEDateLabelExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46DC79961A4A058C00DC4624 /* Build configuration list for PBXNativeTarget "KDEDateLabelExample" */;
@@ -164,9 +216,12 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Kevin Delannoy";
 				TargetAttributes = {
+					460743361C6E594A001AE5A6 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					46DC79761A4A058C00DC4624 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -189,6 +244,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				460743361C6E594A001AE5A6 /* KDEDateLabel */,
 				46DC79761A4A058C00DC4624 /* KDEDateLabelExample */,
 				46DC798B1A4A058C00DC4624 /* KDEDateLabelExampleTests */,
 			);
@@ -196,6 +252,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		460743351C6E594A001AE5A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46DC79751A4A058C00DC4624 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +279,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		460743321C6E594A001AE5A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4607433F1C6E5977001AE5A6 /* KDEDateLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46DC79731A4A058C00DC4624 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +336,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4607433C1C6E594A001AE5A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = KDEDateLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = be.delannoyk.KDEDateLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4607433D1C6E594A001AE5A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = KDEDateLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = be.delannoyk.KDEDateLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		46DC79941A4A058C00DC4624 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -285,6 +404,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -348,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KDEDateLabelExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.delannoyk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -358,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KDEDateLabelExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.delannoyk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -376,6 +498,7 @@
 				);
 				INFOPLIST_FILE = KDEDateLabelExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.delannoyk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDEDateLabelExample.app/KDEDateLabelExample";
 			};
@@ -391,6 +514,7 @@
 				);
 				INFOPLIST_FILE = KDEDateLabelExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.delannoyk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KDEDateLabelExample.app/KDEDateLabelExample";
 			};
@@ -399,6 +523,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4607433E1C6E594A001AE5A6 /* Build configuration list for PBXNativeTarget "KDEDateLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4607433C1C6E594A001AE5A6 /* Debug */,
+				4607433D1C6E594A001AE5A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		46DC79721A4A058C00DC4624 /* Build configuration list for PBXProject "KDEDateLabelExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
