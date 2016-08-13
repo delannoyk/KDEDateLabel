@@ -67,7 +67,7 @@ class KDEDateLabelsHolder: NSObject {
 
         self.timer = NSTimer(timeInterval: KDEDateLabel.refreshFrequency,
             target: self,
-            selector: "timerTicked:",
+            selector: #selector(KDEDateLabelsHolder.timerTicked(_:)),
             userInfo: nil,
             repeats: true)
         NSRunLoop.mainRunLoop().addTimer(self.timer!, forMode: NSRunLoopCommonModes)
