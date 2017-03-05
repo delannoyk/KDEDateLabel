@@ -221,6 +221,7 @@
 				TargetAttributes = {
 					460743361C6E594A001AE5A6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 					46DC79761A4A058C00DC4624 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -354,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.delannoyk.KDEDateLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -378,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.delannoyk.KDEDateLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -530,6 +533,7 @@
 				4607433D1C6E594A001AE5A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46DC79721A4A058C00DC4624 /* Build configuration list for PBXProject "KDEDateLabelExample" */ = {
 			isa = XCConfigurationList;
