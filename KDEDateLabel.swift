@@ -11,7 +11,7 @@ import UIKit
 // MARK: - KDEWeakReferencer
 ////////////////////////////////////////////////////////////////////////////////
 
-internal class KDEWeakReferencer<T: NSObject>: NSObject {
+fileprivate class KDEWeakReferencer<T: NSObject>: NSObject {
     private(set) weak var value: T?
 
     init(value: T) {
@@ -38,9 +38,9 @@ internal class KDEWeakReferencer<T: NSObject>: NSObject {
 // MARK: - KDEDateLabelsHolder
 ////////////////////////////////////////////////////////////////////////////////
 
-internal class KDEDateLabelsHolder: NSObject {
-    var dateLabels = [KDEWeakReferencer<KDEDateLabel>]()
-    var timer: Timer?
+fileprivate class KDEDateLabelsHolder: NSObject {
+    private var dateLabels = [KDEWeakReferencer<KDEDateLabel>]()
+    private var timer: Timer?
 
     static var instance = KDEDateLabelsHolder()
 
@@ -145,7 +145,7 @@ open class KDEDateLabel: UILabel {
         }
     }
 
-    internal func updateText() {
+    fileprivate func updateText() {
         if let date = date {
             if let dateFormatAttributedTextBlock = self.dateFormatAttributedTextBlock {
                 self.attributedText = dateFormatAttributedTextBlock(date)
